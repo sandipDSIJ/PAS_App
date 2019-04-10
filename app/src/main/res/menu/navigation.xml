@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_summary"
+        android:icon="@drawable/ic_whatshot_black_48dp"
+        android:title="Summary" />
+
+    <item
+        android:id="@+id/nav_portfolio"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Reco" />
+
+    <item
+        android:id="@+id/nav_sold_scrip"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="Sold" />
+
+    <!--<item
+        android:id="@+id/navigation_tracker"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Tracker" />-->
+
+    <item
+        android:id="@+id/nav_activity_log"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:title="Act Log" />
+
+    <item
+        android:id="@+id/nav_submit_portfolio"
+        android:icon="@drawable/ic_assignment_black_48dp"
+        android:title="Submitted" />
+
+</menu>

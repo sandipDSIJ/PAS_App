@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/active_background"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_gap"
+        android:paddingBottom="@dimen/default_gap"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:textColor="@color/font_company_name"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                tools:text="Company name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_gap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginRight="@dimen/default_margin"
+                android:text="Quantity" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginRight="@dimen/default_margin"
+                android:text="Avg Price" />
+
+            <TextView
+                android:id="@+id/txtSellPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:text="cmp" />
+
+            <TextView
+                android:id="@+id/txtamt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:text="Amt Inv" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:maxLines="1"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginRight="@dimen/default_margin"
+                tools:text="150" />
+            <TextView
+                android:id="@+id/tvAvgPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="1"
+                android:layout_marginRight="@dimen/default_margin"
+                tools:text="1207.28" />
+
+            <TextView
+                android:id="@+id/tvCMP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="1"
+                tools:text="1280.42" />
+            <TextView
+                android:id="@+id/tvAmtInv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="1"
+                tools:text="1280.42" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_holding_items10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginRight="@dimen/default_margin"
+                android:text="mkt Value" />
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginRight="@dimen/default_margin"
+                android:text="Gain/Loss" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:text="Rtn(%)" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:text="Operation" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvMarketValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginRight="@dimen/default_margin"
+                android:maxLines="1"
+                android:text="124280.00" />
+            <TextView
+                android:id="@+id/tvGainLoss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginRight="@dimen/default_margin"
+                android:maxLines="1"
+                android:text="999.99" />
+
+            <TextView
+                android:id="@+id/tvAbsReturns"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_arrow_drop_up_black_24dp"
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="1"
+                android:text="Abs" />
+            <TextView
+                android:id="@+id/tvOperation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                android:maxLines="1"
+                android:text="-" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/inactive_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:padding="@dimen/default_gap"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:visibility="visible"
+            android:paddingLeft="@dimen/button_gap"
+            android:textColor="@color/font_company_name"
+            android:drawableRight="@drawable/ic_add_black_24dp"
+            android:drawablePadding="@dimen/default_gap"
+            android:textSize="@dimen/button_primary"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginRight="@dimen/default_margin"
+            android:text="EDIT"/>
+
+        <TextView
+            android:id="@+id/tvIndustry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/font_company_name"
+            android:textSize="@dimen/font_holding_items_bold"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginRight="@dimen/default_margin"
+            android:text="Industry" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llActivityLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/inactive_background" />
+</LinearLayout>

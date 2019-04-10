@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/active_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_12"
+        android:paddingRight="@dimen/margin_12"
+        android:paddingBottom="@dimen/margin_12"
+        android:paddingTop="@dimen/margin_12">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_gap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSHCompanyName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:textColor="@color/font_company_name"
+                android:textSize="@dimen/font_holding_items_bold"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginRight="@dimen/margin_12"
+                tools:text="Company name" />
+
+            <TextView
+                android:id="@+id/tvSHDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_secondary"
+                android:textColor="@color/grey400"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="right"
+                tools:text="Date" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginRight="@dimen/paddin10"
+                android:text="QTY" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginRight="@dimen/paddin10"
+                android:text="Price" />
+
+            <TextView
+                android:id="@+id/txtLow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:text="Sell Price" />
+
+            <TextView
+                android:id="@+id/txtHigh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:layout_marginRight="@dimen/default_gap"
+                android:text="Gain/Loss" />
+            <TextView
+                android:id="@+id/txtReason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_regular"
+                android:text="Rtn(%)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_gap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSHQty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginRight="@dimen/paddin10"
+                android:text="QTY" />
+            <TextView
+                android:id="@+id/tvSHBuyPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginRight="@dimen/paddin10"
+                android:text="Cash" />
+
+            <TextView
+                android:id="@+id/tvSHSellPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_bold"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvSHGain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginRight="@dimen/paddin10"
+                android:text="" />
+            <TextView
+                android:id="@+id/tvSHAbsReturn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="@color/font_feed_header_older"
+                android:textSize="@dimen/font_holding_items"
+                android:fontFamily="@font/lato_bold"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

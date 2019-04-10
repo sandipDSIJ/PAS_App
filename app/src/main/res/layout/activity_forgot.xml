@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inactive_background"
+    android:orientation="vertical"
+    tools:context="in.dsij.pas.activity.ForgetPasswordActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/active_background"
+        android:paddingLeft="@dimen/bar_side_margin"
+        android:paddingRight="@dimen/bar_side_margin"
+        android:layout_margin="@dimen/default_gap">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:maxLines="1"
+            android:text="Forgot Username / Password"
+            android:textAllCaps="true"
+            android:textColor="@color/grey800"
+            android:textSize="@dimen/font_primary"
+          android:fontFamily="@font/lato_bold"  />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_gap"
+        android:layout_weight="1"
+        android:background="@color/active_background"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:paddingTop="@dimen/default_gap"
+            android:textColorHint="@color/font_hint"
+            app:errorTextAppearance="@color/font_primary">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="@dimen/font_primary"
+                android:fontFamily="@font/lato_regular" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvLabelHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/default_gap"
+            android:paddingRight="7.6dp"
+            android:paddingTop="7.6dp"
+            android:paddingBottom="7.6dp"
+            android:text="Please enter the Email ID associated with your account to get Username and Password"
+            android:textColor="@color/grey800"
+            android:textSize="@dimen/font_terms"
+           android:fontFamily="@font/lato_regular" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBtnSendLink"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/active_background"
+        android:gravity="center"
+        android:text="Send me the Password"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_primary"
+        android:fontFamily="@font/lato_light" />
+
+</LinearLayout>

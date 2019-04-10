@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portfolio Name"
+        android:textSize="@dimen/font_holding_items_bold"
+        android:textColor="@color/grey600"
+        android:layout_margin="@dimen/margin_16"
+        android:fontFamily="@font/lato_bold"/>
+
+    <EditText
+        android:id="@+id/etPortfolioName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_holding_items_bold"
+        android:textColor="@color/grey600"
+        android:ems="14"
+        android:background="@drawable/rounded_corner_white"
+        android:layout_margin="@dimen/margin_16" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_holding_items_bold"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/whitish"
+
+        android:text="Submit"/>
+</LinearLayout>

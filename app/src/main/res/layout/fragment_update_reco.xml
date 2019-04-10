@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inactive_background"
+    android:padding="@dimen/default_gap"
+    tools:context="in.dsij.pas.fragment.UpdateRecoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="Summary"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_big" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSummery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/inactive_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:text="Update Recommendation"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_big" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvUpdateReco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/inactive_background" />
+
+        <LinearLayout
+            android:id="@+id/llBottomTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_gap"
+                android:text="Total"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/button_primary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="14"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text="Amt Inv : "
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_holding_items_bold" />
+
+                <TextView
+                    android:id="@+id/tvTotAmtInv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text=""
+                    android:maxLength="10"
+                    android:layout_weight="5.5"
+                    android:textColor="@color/font_feed_header_older"
+                    android:textSize="@dimen/font_holding_items_bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text="Mkt Value : "
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_holding_items_bold" />
+
+                <TextView
+                    android:id="@+id/tvTotMktValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text=""
+                    android:maxLength="10"
+                    android:layout_weight="5.5"
+                    android:textColor="@color/font_feed_header_older"
+                    android:textSize="@dimen/font_holding_items_bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="14"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text="Gain/Loss "
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_holding_items_bold" />
+
+                <TextView
+                    android:id="@+id/tvTotGain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text=""
+                    android:layout_weight="5.5"
+                    android:maxLength="10"
+                    android:textColor="@color/font_feed_header_older"
+                    android:textSize="@dimen/font_holding_items_bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text="Abs"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_holding_items_bold" />
+
+                <TextView
+                    android:id="@+id/tvTotAbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/default_gap"
+                    android:text=""
+                    android:maxLength="10"
+                    android:layout_weight="5.5"
+                    android:textColor="@color/font_feed_header_older"
+                    android:textSize="@dimen/font_holding_items_bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/flEmptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/inactive_background"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_gap"
+                    android:layout_marginRight="@dimen/default_gap"
+                    android:layout_marginBottom="@dimen/default_gap"
+                    android:background="@color/active_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivError"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_error_black_48dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/default_margin"
+                        android:layout_marginLeft="@dimen/default_gap"
+                        android:layout_marginRight="@dimen/default_gap"
+                        android:gravity="center"
+                        android:text="Not Available"
+                        android:textColor="@color/font_hint"
+                        android:textSize="@dimen/font_primary" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

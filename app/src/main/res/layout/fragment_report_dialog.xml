@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:background="@color/white"
+              android:theme="@style/AppTheme.NoActionBar"
+              tools:context="in.dsij.pas.dialog.ReportDialogFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/fon_report_issue"
+        tools:text="Alert Title"
+        android:textColor="@color/white"
+
+        android:background="@color/colorPrimaryDark"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Report Feedback"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/lato_bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/grey_10">
+
+            <AutoCompleteTextView
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/font_secondary"
+                android:textSize="16dp"
+                android:fontFamily="@font/lato_regular"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/grey_10">
+
+            <AutoCompleteTextView
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone (Optional)"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textColor="@color/font_secondary"
+                android:textSize="16dp"
+                android:maxLength="15"
+                android:fontFamily="@font/lato_regular"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@color/grey_10">
+
+            <AutoCompleteTextView
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/grey_10"
+                android:hint="Description"
+                android:gravity="left|top"
+                android:imeOptions="actionNone"
+                android:inputType="textMultiLine"
+                android:maxLines="15"
+                android:textColor="@color/font_secondary"
+                android:textSize="16dp"
+                android:fontFamily="@font/lato_regular"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/tvBtnCancel"
+                android:text="Cancel"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="@dimen/fon_report_issue"
+                android:textColor="@color/whitish"
+                android:background="@drawable/rounded_corner"
+                android:layout_width="90dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/tvBtnOk"
+                android:text="Send"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="@dimen/fon_report_issue"
+                android:textColor="@color/whitish"
+                android:background="@drawable/rounded_corner"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inactive_background"
+    android:orientation="vertical"
+    tools:context="in.dsij.pas.activity.SignUpActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/active_background"
+        android:paddingLeft="@dimen/bar_side_margin"
+        android:paddingRight="@dimen/bar_side_margin">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:maxLines="1"
+            android:text="Sign Up"
+            android:textAllCaps="true"
+            android:textColor="@color/font_header"
+            android:textSize="@dimen/font_header"
+            android:fontFamily="@font/lato_bold" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/active_background"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/default_gap"
+        android:layout_weight="1"
+        android:background="@color/active_background"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:paddingTop="@dimen/default_gap"
+            android:textColorHint="@color/font_error_hint"
+            app:errorTextAppearance="@color/font_primary">
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="@dimen/font_primary"
+                android:fontFamily="@string/" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:paddingTop="@dimen/default_gap"
+            android:textColorHint="@color/font_error_hint"
+            app:errorTextAppearance="@color/font_primary">
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="@dimen/font_primary"
+                android:fontFamily="@font/lato_regular" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:paddingTop="@dimen/default_gap"
+            android:textColorHint="@color/font_error_hint"
+            app:errorTextAppearance="@color/font_primary">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="@dimen/font_primary"
+                android:fontFamily="@font/lato_regular" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingTop="@dimen/default_gap"
+            android:textColorHint="@color/font_error_hint"
+            app:errorTextAppearance="@color/font_primary">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Username"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="@dimen/font_primary"
+                android:fontFamily="@font/lato_regular" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/default_gap"
+            android:paddingLeft="@dimen/default_gap"
+            android:paddingRight="@dimen/default_gap"
+            android:text="Your Username will be your Email Id"
+            android:textColor="@color/font_hint"
+            android:textSize="@dimen/font_terms"
+            android:fontFamily="@font/lato_regular" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_gap"
+            android:paddingTop="@dimen/default_gap"
+            android:textColorHint="@color/font_error_hint"
+            app:errorTextAppearance="@color/font_primary">
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/font_hint"
+                android:textSize="@dimen/font_primary"
+                android:fontFamily="@font/lato_regular" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvLabelTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingTop="7.6dp"
+            android:text="By Signing up you agree to our"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_terms"
+            android:fontFamily="@font/lato_regular" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7.6dp"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="7.6dp"
+                android:paddingLeft="7.6dp"
+                android:paddingTop="7.6dp"
+                android:text="Privacy Policy"
+                android:textColor="@color/font_primary_action"
+                android:textSize="@dimen/font_terms"
+                android:fontFamily="@font/lato_regular" />
+
+            <TextView
+                android:id="@+id/tvLabelAnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="7.6dp"
+                android:paddingTop="7.6dp"
+                android:text=" and "
+                android:textColor="@color/font_primary"
+                android:textSize="@dimen/font_terms"
+                android:fontFamily="@font/lato_regular" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="7.6dp"
+                android:paddingRight="7.6dp"
+                android:paddingTop="7.6dp"
+                android:text="Terms and conditions"
+                android:textColor="@color/font_primary_action"
+                android:textSize="@dimen/font_terms"
+                android:fontFamily="@font/lato_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_gap"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvBtnSignUp"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/active_background"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/font_primary_action"
+            android:textSize="@dimen/button_primary"
+            android:fontFamily="@font/lato_bold" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/default_gap"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvBtnSignIn"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/active_background"
+            android:gravity="center"
+            android:text="Sign In"
+            android:visibility="gone"
+            android:textColor="@color/font_secondary_action"
+            android:textSize="@dimen/button_primary"
+            android:fontFamily="@font/lato_bold" />
+    </LinearLayout>
+
+</LinearLayout>

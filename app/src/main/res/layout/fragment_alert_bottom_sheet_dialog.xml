@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_dialog"
+    android:layout_marginRight="@dimen/margin_dialog"
+    android:background="@color/active_background"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_dialog"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    tools:context="in.dsij.pas.dialog.AlertBottomSheetDialogFragment">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/bar_side_margin"
+        android:layout_height="@dimen/bar_side_margin"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_dialog"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/margin_dialog"
+        android:textColor="@color/font_primary"
+        android:textSize="@dimen/font_primary"
+        android:fontFamily="@font/lato_regular"
+        tools:text="This username is already been taken.\n\nPlease try signing up with different" />
+
+    <LinearLayout
+        android:id="@+id/llActionButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_dialog"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvBtnSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_dialog"
+            android:paddingTop="@dimen/margin_dialog"
+            android:textColor="@color/font_summery"
+            android:textSize="@dimen/font_dialog"
+           android:fontFamily="@font/lato_regular"
+            tools:text="Secondary" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="27.5dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvBtnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_dialog"
+            android:paddingTop="@dimen/margin_dialog"
+            android:textColor="@color/font_primary_action"
+            android:textSize="@dimen/font_dialog"
+            android:fontFamily="@font/lato_regular"
+            tools:text="Primary" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/colorPrimary"
+              android:theme="@style/ProgressDialogTheme"
+              tools:context="in.dsij.pas.dialog.ProgressDialogFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_primary"
+        tools:text="Progress Title"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_regular"
+        android:background="@color/colorPrimaryDark"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvMsg"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sending magic Link to\nv.m.borkar@gmail.com"
+            android:textColor="@color/white"
+           android:fontFamily="@font/lato_regular"
+            android:textSize="@dimen/fon_report_issue"/>
+        
+
+    </LinearLayout>
+
+</LinearLayout>

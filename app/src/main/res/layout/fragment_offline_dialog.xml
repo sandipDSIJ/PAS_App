@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/colorPrimary"
+              android:theme="@style/ProgressDialogTheme"
+              tools:context="in.dsij.pas.dialog.AlertDialogFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_big"
+        tools:text="Alert Title"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bold"
+        android:background="@color/colorPrimaryDark"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_file_download_black_48dp"
+            android:tint="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Do you want to exit DSIJ Magazine ?"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="@dimen/font_primary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/tvBtnCancel"
+            android:text="Continue Offline"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/font_primary"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_width="140dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/tvBtnOk"
+            android:text="Go to Settings"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/button_primary"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/rounded_corner_white"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

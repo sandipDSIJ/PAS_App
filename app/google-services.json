@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "746112362862",
+    "firebase_url": "https://dsij-pas-dddfb.firebaseio.com",
+    "project_id": "dsij-pas-dddfb",
+    "storage_bucket": "dsij-pas-dddfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746112362862:android:b3e1b7100b369c50",
+        "android_client_info": {
+          "package_name": "in.dsij.pas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746112362862-3p2mmocch0d0uj4s65ood23cgikrd8j2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.dsij.pas",
+            "certificate_hash": "b38d0e2d5d3dbe4d013846095466b411dc0b0a58"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl2gaY0POydAe_ipWxOEp88cTa9j0wpew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746112362862-d36k1sqatfs4eap08vvgd5llbhvu8cf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#30B55A</color>
+    <color name="colorPrimaryDark">#20793c</color>
+    <color name="colorAccent">@color/font_primary</color>
+
+    <!--Original Colors-->
+    <!--<color name="dsij_red">#f20506</color>
+    <color name="dsij_red_dark">#cf0405</color>
+    <color name="font_primary">#464646</color>-->
+
+    <color name="font_error_hint">@color/grey400</color>
+   <!-- <color name="dsij_red">#30B55A</color>-->
+    <!--<color name="dsij_red_dark">#20793c</color>-->
+    <color name="font_primary">#464646</color>
+    <color name="font_secondary">#959595</color>
+    <color name="font_ternary">#b7b7b7</color>
+    <color name="white">#ffffff</color>
+    <color name="grey_10">#ebebeb</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="whitish">#ffffffff</color>
+    <color name="grey600">#757575</color>
+    <color name="grey400">#aaaaaa</color>
+    <color name="grey800">#424242</color>
+
+    <color name="color_red">#FF0000</color>
+
+    <!--App Colors-->
+    <color name="font_header">@color/font_primary</color>
+    <color name="font_summery">@color/font_secondary</color>
+    <color name="font_hint">@color/font_ternary</color>
+    <color name="inactive_background">@color/grey_10</color>
+    <color name="active_background">@color/white</color>
+
+    <color name="font_primary_action">@color/colorPrimary</color>
+    <color name="font_secondary_action">@color/font_primary</color>
+
+    <color name="font_feed_header_new">@color/colorPrimary</color>
+    <color name="font_feed_header_older">@color/font_primary</color>
+    <color name="tab_deselected_text">#aaffffff</color>
+
+
+    <color name="font_inactive">#acacac</color>
+    <color name="font_active">@color/colorPrimary</color>
+
+    <color name="feed_header">#767676</color>
+    <color name="common_background">@color/white</color>
+
+    <color name="colorPrimaryOverlay80">#cc30B55A</color>
+
+    <color name="font_company_name">#215E8D</color>
+
+</resources>

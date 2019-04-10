@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/whitish"
+              android:theme="@style/ProgressDialogTheme"
+              tools:context="in.dsij.pas.dialog.AlertDialogFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_primary"
+        android:fontFamily="@font/lato_bold"
+        tools:text="Alert Title" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/margin_12"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginRight="@dimen/margin_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <!--  <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_error_black_48dp"
+            android:tint="@color/white"/>-->
+
+        <TextView
+            android:layout_marginLeft="@dimen/default_gap"
+            android:id="@+id/tvMsg"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="No inbox app found !\n\nPlease install inbox app of your choice or Try Login With Facebook"
+            android:textColor="@color/feed_header"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="@dimen/fon_report_issue"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

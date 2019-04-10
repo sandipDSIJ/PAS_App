@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inactive_background"
+    android:orientation="vertical"
+    tools:context="in.dsij.pas.fragment.SoldHistoryFragment">
+
+   <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/default_gap"
+        android:background="@color/active_background"
+        android:paddingLeft="@dimen/bar_side_margin"
+        android:paddingRight="@dimen/bar_side_margin">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:maxLines="1"
+            android:text="Live"
+            android:textAllCaps="false"
+            android:textColor="@color/font_header"
+            android:textSize="@dimen/font_big"
+            android:fontFamily="@font/sourcesanspro_semibold" />
+
+    </FrameLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSoldHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:layout_marginRight="@dimen/default_gap"
+        android:layout_weight="1"
+        android:background="@color/inactive_background"/>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/flEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@color/inactive_background">
+
+        <LinearLayout
+            android:background="@color/active_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/default_gap"
+            android:layout_marginRight="@dimen/default_gap"
+            android:layout_marginBottom="@dimen/default_gap">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivError"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_error_black_48dp"/>
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_margin="@dimen/default_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_gap"
+                android:layout_marginRight="@dimen/default_gap"
+                android:gravity="center"
+                android:text="Not Available\n\nYou are not subscribed to any Product"
+                android:textColor="@color/font_hint"
+                android:textSize="@dimen/font_primary" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
+

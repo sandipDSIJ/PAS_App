@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/colorPrimary"
+              android:theme="@style/ProgressDialogTheme"
+              tools:context="in.dsij.pas.dialog.ErrorDialogFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_primary"
+        tools:text="Alert Title"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bold"
+        android:background="@color/colorPrimaryDark"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_error_black_48dp"
+            android:tint="@color/white"/>
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tvMsg"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Subscription Done Successfully\n\nPayment details have been sent your Email / Phone."
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="@dimen/font_primary"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBtnOk"
+        android:layout_gravity="center_horizontal"
+        android:text="OK"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="@dimen/font_primary"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rounded_corner_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
